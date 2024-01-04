@@ -3,238 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Planes de Suscripción</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f5f5f5;
-  }
-  .navbar {
-    background: linear-gradient(to right, #00bcd4, #ffffff);
-    overflow: hidden;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .navbar a, .navbar button {
-    display: inline-block;
-    color: black;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 5px;
-    background: none;
-    border: none;
-  }
-  .navbar a.active {
-    background-color: white;
-    color: black;
-  }
-  .navbar button {
-    cursor: pointer;
-    font-size: 0.8em;
-    background-color: #78b6f8; /* Cambio a tono azul */
-    color: rgb(0, 0, 0);
-    margin-left: 10px;
-  }
-  .navbar .right-section {
-    display: flex;
-    align-items: center;
-  }
-  .navbar .right-section button {
-    padding: 10px 15px;
-  }
-  .logo {
-    width: 50px;
-    height: 50px;
-    background-image: url('logo_chat_bot.png');
-    background-size: cover;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .header {
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 60px;
-    font-size: 24px;
-    max-width: 800px;
-    margin: auto;
-  }
-  .plans {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background: #fff;
-    flex-wrap: wrap;
-  }
-  .plan {
-    background: linear-gradient(to right, #00bcd4, #ffffff);
-    border: 2px solid #4caf50;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    flex: 1;
-    min-width: 250px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  .plan:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
-  .plan h2 {
-    color: black;
-  }
-  .plan p, .plan ul {
-    line-height: 1.6;
-  }
-  .price {
-    font-size: 2em;
-    font-weight: bold;
-    transition: transform 0.3s;
-  }
-  .price:hover {
-    transform: scale(1.1);
-  }
-  button.subscribe {
-    color: black;
-    background-color: #c8dcf1; /* Cambio a tono azul */
-    border: 2px solid #78b6f8; /* Borde más oscuro */
-    padding: 10px 20px;
-    margin: 10px 0;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  button.subscribe:hover {
-    background-color: #4587cd; /* Oscurecer al pasar el cursor */
-    color: white;
-  }
-  .payment-methods {
-    background-color: #f44336;
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
-  .payment-methods i {
-    margin: 0 5px;
-  }
-  .footer {
-    background-color: #e0e0e0;
-    padding: 10px;
-    text-align: center;
-  }
-
-  /* Estilos para el menú hamburguesa */
-  .menu-toggle {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-  }
-
-  /* Estilos para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .navbar .menu {
-      display: none;
-      width: 100%;
-    }
-    .navbar .menu a, .navbar .menu button {
-      display: block;
-      padding: 10px;
-      text-align: left;
-      width: 100%;
-    }
-    .menu-toggle {
-      display: block;
-    }
-    .navbar .right-section {
-      display: none; /* Ocultar en móviles */
-    }
-  }
-</style>
-<script>
-  function toggleMenu() {
-    var menu = document.querySelector('.navbar .menu');
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-  }
-</script>
+<title>Inicio - Chat Bot</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="navbar">
   <div class="logo">CB</div>
   <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
   <div class="menu">
-    <a href="#">Inicio</a>
-    <a href="#">Nosotros</a>
-    <a href="#" class="active">Planes</a>
-    <a href="#">Contáctanos</a>
+    <a href="index.html" class="active">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="planes.html">Planes</a>
+    <a href="contactanos.html">Contáctanos</a>
     <button>Login</button>
     <button>Regístrate</button>
   </div>
 </div>
 
 <div class="header">
-  <h1>Suscríbete y potencia tu negocio a otro nivel!</h1>
-</div>
-<div class="plans">
-  <div class="plan">
-    <h2>Basic</h2>
-    <p class="price">$999/mes</p>
-    <ul>
-      <li>Acceso a funciones esenciales del asistente virtual.</li>
-      <li>Soporte por correo electrónico durante horas laborables.</li>
-      <li>Hasta 3 chatbots activos.</li>
-      <li>Actualizaciones mensuales sobre nuevas características.</li>
-    </ul>
-    <button class="subscribe">Suscríbete a Basic</button>
-  </div>
-  <div class="plan">
-    <h2>Plus</h2>
-    <p class="price">$2499/mes</p>
-    <ul>
-      <li>Todas las funciones del Plan Basic.</li>
-      <li>Soporte telefónico prioritario las 24 horas, los 7 días de la semana.</li>
-      <li>Hasta 10 chatbots activos.</li>
-      <li>Integración con servicios de terceros (WhatsApp, Messenger).</li>
-      <li>Acceso a informes de análisis de rendimiento.</li>
-    </ul>
-    <button class="subscribe">Suscríbete a Plus</button>
-  </div>
-  <div class="plan">
-    <h2>Expert</h2>
-    <p class="price">$5000/mes</p>
-    <ul>
-      <li>Todas las funciones del Plan Plus.</li>
-      <li>Asesoramiento personalizado para la optimización de chatbots.</li>
-      <li>Acceso prioritario a nuevas funcionalidades y actualizaciones.</li>
-      <li>Sin límite en la cantidad de chatbots activos.</li>
-      <li>Base de datos ampliada para el almacenamiento de archivos y registros.</li>
-    </ul>
-    <button class="subscribe">Suscríbete a Expert</button>
+  <img src="chatbot_inicio.jpg" alt="Chatbot" class="inicio-image">
+  <div class="inicio-text">
+    <h1>Bienvenido a Chat Bot</h1>
+    <p>Tu plataforma integral para la creación, gestión y optimización de chatbots. Potencia tu experiencia con la última tecnología en asistentes virtuales.</p>
   </div>
 </div>
-<div class="payment-methods">
-  <p>Precios en pesos mexicanos. Usa el medio de pago que prefieras.</p>
-  <i class="fab fa-cc-visa"></i>
-  <i class="fab fa-cc-mastercard"></i>
-  <i class="fab fa-cc-amex"></i>
-  <i class="fab fa-cc-paypal"></i>
-</div>
+
+<!-- Aquí puedes añadir más contenido a tu página de inicio si es necesario -->
+
+
 <div class="footer">
-  <p>© 2023 Tu Empresa. Todos los derechos reservados.</p>
+  <p>© 2024 Chat Bot. Todos los derechos reservados.</p>
 </div>
+
+<script>
+  function toggleMenu() {
+    var menu = document.querySelector('.navbar .menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
 </body>
 </html>

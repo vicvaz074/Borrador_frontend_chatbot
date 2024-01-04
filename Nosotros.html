@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros - Chat Bot</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="navbar">
+  <div class="logo">CB</div>
+  <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+  <div class="menu">
+    <a href="inicio.html">Inicio</a>
+    <a href="nosotros.html" class="active">Nosotros</a>
+    <a href="planes.html">Planes</a>
+    <a href="contactanos.html">Contáctanos</a>
+    <button>Login</button>
+    <button>Regístrate</button>
+  </div>
+</div>
+
+<div class="header">
+  <div class="animated-text">
+    <h1>Conoce Más Sobre Nosotros</h1>
+    <p>Somos Chat Bot, una empresa apasionada por la innovación.</p>
+  </div>
+</div>
+
+<main>
+  <section class="video-placeholder">Video Placeholder</section>
+
+  <section class="storytelling">
+    <h2>Storytelling</h2>
+    <p>Somos Chat Bot, una empresa apasionada por la innovación y el servicio excepcional. Desde nuestro inicio, nos hemos dedicado a simplificar la interacción entre las empresas y sus clientes a través de soluciones tecnológicas avanzadas.</p>
+    <p>En Chat bot, creemos en el poder de la inteligencia artificial para transformar la forma en que las empresas se comunican y operan. Nuestra misión es proporcionar herramientas accesibles y eficientes para que puedas aprovechar al máximo el potencial de los asistentes virtuales.</p>
+    <p>Con un equipo de profesionales altamente calificados y comprometidos, trabajamos incansablemente para ofrecerte la mejor experiencia posible. Estamos aquí para ayudarte a construir, implementar y mejorar tu presencia digital a través de soluciones personalizadas.</p>
+    <p>¡Gracias por ser parte de nuestro viaje!</p>
+  </section>
+</main>
+
+<div class="footer">
+  <p>© 2024 Chat Bot. Todos los derechos reservados.</p>
+</div>
+
+<script>
+  function toggleMenu() {
+    var menu = document.querySelector('.navbar .menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+</body>
+</html>

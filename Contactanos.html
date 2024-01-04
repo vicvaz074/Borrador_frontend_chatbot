@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contáctanos - Tu Empresa</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="navbar">
+  <!-- Navegación principal -->
+  <div class="logo">CB</div>
+  <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+  <div class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="planes.html">Planes</a>
+    <a href="contactanos.html" class="active">Contáctanos</a>
+    <button>Login</button>
+    <button>Regístrate</button>
+  </div>
+</div>
+
+<div class="header">
+  <!-- Encabezado de la página -->
+  <div class="animated-text">
+    <h1>Estamos aquí para ayudarte</h1>
+    <p>Tu satisfacción es nuestra prioridad. Contacta con nosotros para cualquier duda o servicio de soporte.</p>
+  </div>
+</div>
+
+<main>
+  <!-- Sección de información de contacto -->
+  <section class="contact-section">
+    <h2>Información de Contacto</h2>
+    <p>Para consultas generales o asistencia técnica, puedes comunicarte con nosotros a través de los siguientes medios:</p>
+    <ul>
+      <li>Correo electrónico: contacto@tuempresa.com</li>
+      <li>Teléfono: +1 (555) 123-4567</li>
+      <li>Dirección: Calle Falsa 123, Ciudad, País</li>
+    </ul>
+  </section>
+  
+  <!-- Sección del formulario de contacto -->
+  <section class="contact-form-section">
+    <h2>Envíanos un Mensaje Directo</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Nombre Completo" required>
+      <input type="email" name="email" placeholder="Correo Electrónico" required>
+      <textarea name="message" placeholder="Escribe tu mensaje aquí" rows="6" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  
+<div class="footer">
+  <!-- Pie de página -->
+  <p>© 2024 Tu Empresa. Todos los derechos reservados.</p>
+</div>
+
+<script>
+  // Función para el menú desplegable en móviles
+  function toggleMenu() {
+    var menu = document.querySelector('.navbar .menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+</body>
+</html>

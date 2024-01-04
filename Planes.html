@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<title>Planes - Tu Empresa</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="navbar">
+  <div class="logo">CB</div>
+  <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+  <div class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="planes.html" class="active">Planes</a>
+    <a href="contactanos.html">Contáctanos</a>
+    <button>Login</button>
+    <button>Regístrate</button>
+  </div>
+</div>
+
+<div class="header">
+  <h1>Suscríbete y potencia tu negocio a otro nivel</h1>
+</div>
+
+<div class="plans">
+  <div class="plan">
+    <h2>Basic</h2>
+    <p class="price">$999/mes</p>
+    <ul>
+      <li>Acceso a funciones esenciales del asistente virtual.</li>
+      <li>Soporte por correo electrónico durante horas laborables.</li>
+      <li>Hasta 3 chatbots activos.</li>
+      <li>Actualizaciones mensuales sobre nuevas características.</li>
+    </ul>
+    <button class="subscribe">Suscríbete a Basic</button>
+  </div>
+  <div class="plan">
+    <h2>Plus</h2>
+    <p class="price">$2499/mes</p>
+    <ul>
+      <li>Todas las funciones del Plan Basic.</li>
+      <li>Soporte telefónico prioritario las 24 horas, los 7 días de la semana.</li>
+      <li>Hasta 10 chatbots activos.</li>
+      <li>Integración con servicios de terceros (WhatsApp, Messenger).</li>
+      <li>Acceso a informes de análisis de rendimiento.</li>
+    </ul>
+    <button class="subscribe">Suscríbete a Plus</button>
+  </div>
+  <div class="plan">
+    <h2>Expert</h2>
+    <p class="price">$5000/mes</p>
+    <ul>
+      <li>Todas las funciones del Plan Plus.</li>
+      <li>Asesoramiento personalizado para la optimización de chatbots.</li>
+      <li>Acceso prioritario a nuevas funcionalidades y actualizaciones.</li>
+      <li>Sin límite en la cantidad de chatbots activos.</li>
+      <li>Base de datos ampliada para el almacenamiento de archivos y registros.</li>
+    </ul>
+    <button class="subscribe">Suscríbete a Expert</button>
+  </div>
+</div>
+
+<div class="payment-methods">
+  <p>Precios en pesos mexicanos. Usa el medio de pago que prefieras</p>
+  <i class="fab fa-cc-visa"></i>
+  <i class="fab fa-cc-mastercard"></i>
+  <i class="fab fa-cc-amex"></i>
+  <i class="fab fa-cc-paypal"></i>
+</div>
+
+<div class="footer">
+  <p>© 2024 Tu Empresa. Todos los derechos reservados.</p>
+</div>
+
+<script>
+  function toggleMenu() {
+    var menu = document.querySelector('.navbar .menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+</body>
+</html>
